@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/action_search"
+        android:showAsAction="always|collapseActionView"
+        android:title="Search"/>
+    
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/next_page">
+    </item>
+    <item
+        android:id="@+id/action_previous"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/previous_page">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/action_settings"
+        android:orderInCategory="6"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings">
+    </item>
+
+    <item
+        android:id="@+id/action_bookmarks"
+        android:icon="@drawable/collections_labels"
+        android:orderInCategory="5"
+        android:showAsAction="always"
+        android:title="@string/bookmarks">
+    </item>
+
+</menu>

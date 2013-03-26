@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.ac.uct.cs.lwsjam005.eshelf"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="za.ac.uct.cs.lwsjam005.eshelf.activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="za.ac.uct.cs.lwsjam005.eshelf.activities.MainActivity" />
+            
+        </activity>
+        <activity
+            android:name="za.ac.uct.cs.lwsjam005.eshelf.activities.ReadActivity"
+            android:label="Reader"
+            android:uiOptions="splitActionBarWhenNarrow" >
+
+        </activity>
+        <activity
+            android:name="za.ac.uct.cs.lwsjam005.eshelf.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="za.ac.uct.cs.lwsjam005.eshelf.activities.CheckoutActivity"
+            android:label="@string/title_activity_checkout">
+        </activity>
+    </application>
+
+</manifest>

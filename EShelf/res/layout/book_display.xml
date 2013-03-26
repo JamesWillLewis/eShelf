@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="2"
+    android:useDefaultMargins="false" >
+
+    <FrameLayout
+        android:id="@+id/thumb_view"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:background="#000055" >
+
+    <ImageView
+        android:id="@+id/book_display_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cover1" />
+
+    <LinearLayout
+        android:id="@+id/rating_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        android:background="#55000055"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/book_display_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/book_display_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+    <TextView
+        android:id="@+id/description_panel"
+        android:layout_height="110dp"
+        android:layout_column="1"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:layout_row="0"
+        android:layout_rowSpan="1"
+        android:background="#550000cc"
+        android:ems="10"
+        android:text="This is the book&apos;s description area. Some brief description goes here. This is similar to the &apos;blurb&apos; writing on the back of a book."
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/cart_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_column="1"
+        android:layout_gravity="bottom|fill_horizontal"
+        android:layout_row="1"
+        android:background="#440044bb"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/purchase_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/icon_cart" />
+
+        <TextView
+            android:id="@+id/book_display_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="R 124.60"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</GridLayout>

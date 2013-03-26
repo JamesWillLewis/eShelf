@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eShelf</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="read_tab">Read</string>
+    <string name="shelf_tab">Shelf</string>
+    <string name="library_tab">Store</string>
+    <string name="search_tab">Search</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="next_page">Next</string>
+    <string name="previous_page">Previous</string>
+    <string name="sort">Sort</string>
+    <string name="page_text">\n  This is a sample page. This is sample text.
+        Use the controls at the bottom to naviagate to the next
+        or previous page. You can also slide pages by dragging 
+        the page to the left or right. To leave read mode,
+        press the back button at the top. You can search for
+        strings in the page, add bookmarks, view bookmarks, etc.
+        If you leave read mode, your current position is remembered.</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="search_hint"> Search for title, author, tags, etc.</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="new_bookmark">New bookmark</string>
+    <string name="list_bookmarks">List Bookmarks</string>
+    <string name="jump_to_page">Jump to page</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

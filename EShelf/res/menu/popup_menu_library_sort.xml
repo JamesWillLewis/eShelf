@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_sort_title"
+        android:title="Title">
+    </item>
+    <item
+        android:id="@+id/action_sort_author"
+        android:title="Author">
+    </item>
+    <item
+        android:id="@+id/action_sort_publisher"
+        android:title="Publisher">
+    </item>
+    <item
+        android:id="@+id/action_sort_genre"
+        android:title="Genre">
+    </item>
+    <item
+        android:id="@+id/action_sort_date"
+        android:title="Latest">
+    </item>
+    <item
+        android:id="@+id/action_sort_price"
+        android:title="Price">
+    </item>
+     <item
+        android:id="@+id/action_sort_rating"
+        android:title="Rating">
+    </item>
+    <item
+        android:id="@+id/action_sort_owned"
+        android:title="Owned">
+    </item>
+
+</menu>
